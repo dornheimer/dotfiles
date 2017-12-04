@@ -1,0 +1,50 @@
+"*":
+  "autocomplete-python":
+    useKite: false
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    autoHideMenuBar: true
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "terminal-plus"
+      "language-python"
+    ]
+    projectHome: "/home/iiu/git"
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    fontSize: 18
+    invisibles:
+      cr: ""
+      eol: ""
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "2357121d-15c9-4192-9b17-4e28fadf813f"
+  linter:
+    lintOnChange: false
+  "linter-pylama":
+    ignoreErrorsAndWarnings: "D203,D212,D213,D404,E501,D100"
+    lintOnFly: false
+    useMcCabe: false
+  "linter-python":
+    enableDebug: true
+    executablePath: "/usr/lib/python3.6/site-packages/pylama"
+    withPep257: true
+    withPep8: true
+    withPylint: true
+  "linter-ui-default":
+    panelHeight: 212
+  minimap: {}
+  "platformio-ide-terminal":
+    style:
+      theme: "predawn"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
