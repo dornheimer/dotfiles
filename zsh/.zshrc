@@ -1,9 +1,11 @@
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/iiu/.oh-my-zsh
+export ZSH=/home/iiu/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -57,7 +59,10 @@ ZSH_THEME="simple"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    pip
+    )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,21 +104,22 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+# alias zshconfig="kate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="kate ~/.zshrc"
 alias plex=plexmediaplayer
 alias zfresh='sudo zypper refresh'
 alias ls='ls -al'
 alias zlu='zypper lu'
-alias zdup='sudo zypper dup -l --no-allow-vendor-change --no-recommends'
+alias zdup='sudo zypper dup -l --no-recommends'
 alias zup='sudo zypper up -l --no-recommends'
 alias lgog=lgogdownloader
 alias zfreshlu='sudo zypper refresh && zypper lu'
 alias zypper='noglob zypper'
-alias cogmind='cd /home/iiu/.cogmind/drive_c/COGMIND\ (Beta\ 2)/ && env WINEPREFIX=/home/iiu/.cogmind SDL_AUDIODRIVER="" wine ./COGMIND.exe'
 alias py=python3
 alias py2=python
 alias cdrl="cd ~/git/roguelike-python3"
-
 alias kwin-restart='kquitapp5 plasmashell && kstart5 plasmashell'
 alias killbnet='killall Battle.net.exe Agent.exe'
+alias rezsh='source ~/.zshrc'
+alias vwrap=virtualenvwrapper
