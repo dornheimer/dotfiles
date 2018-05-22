@@ -1,0 +1,18 @@
+[core]
+	editor = micro
+[user]
+	name = dornheimer
+	email = beaveroftime@gmail.com
+[alias]
+	br = branch
+	cl = clone
+	ci = commit
+	cm = commit -m
+	co = checkout
+	cob = checkout -b
+	st = status
+	unstage = reset HEAD --
+	reb = "!f() { git rebase -i HEAD~$1; }; f"
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+[color "status"]
+    added = yellow
