@@ -8,6 +8,8 @@
 	cl = clone
 	ci = commit
 	cm = commit -m
+	ca = commit --amend --no-edit
+	cam = commit --amend -m
 	co = checkout
 	cob = checkout -b
 	st = status
