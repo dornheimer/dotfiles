@@ -2,20 +2,39 @@
 	editor = micro
 [user]
 	name = dornheimer
-	email = beaveroftime@gmail.com
+	email = iiu@posteo.net
 [alias]
+    a = add
+    aa = add .
+	au = add -u
 	br = branch
 	cl = clone
 	ci = commit
 	cm = commit -m
 	ca = commit --amend --no-edit
-	cam = commit --amend -m
+	cam = commit --amend
 	co = checkout
 	cob = checkout -b
+	fall = fetch --all --prune
+	puff = pull --ff-only
+	pure = pull --rebase
+	pushit = push --force
+	d = diff
+	ds = diff --staged
 	st = status
 	unstage = reset HEAD --
+	rei = rebase -i
 	reb = "!f() { git rebase -i HEAD~$1; }; f"
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	reco = rebase --continue
+	rshard = reset --hard origin
+	sap = stash apply
+	spo = stash pop
+	ssh = stash show -p
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
+	glog = log --all --oneline --graph
+	cf = config
+	cfl = config --list
+	head = "!f() { git show HEAD~$1; }; f"
 [color "status"]
     added = yellow
     untracked = cyan
