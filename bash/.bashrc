@@ -12,7 +12,7 @@
 
 # Some applications read the EDITOR variable to determine your favourite text
 # editor. So uncomment the line below and enter the editor of your choice :-)
-export EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/micro
 #export EDITOR=/usr/bin/mcedit
 
 # For some news readers it makes sense to specify the NEWSSERVER variable here
@@ -25,13 +25,4 @@ export EDITOR=/usr/bin/vim
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
 
-test -s ~/.alias && . ~/.alias || true
-alias plex=plexmediaplayer
-alias zfresh='sudo zypper refresh'
-alias ls='ls -al'
-alias zlu='zypper lu'
-alias zdup='sudo zypper dup -l --no-allow-vendor-change --no-recommends'
-alias zup='sudo zypper up -l --no-recommends'
-alias lgog=lgogdownloader
-alias zfreshlu='sudo zypper refresh && zypper lu'
-export PATH=/home/iiu/bin:/home/iiu/bin:/usr/local/bin:/usr/bin:/bin
+test -s ~/.bash_aliases && . ~/.bash_aliases || true
