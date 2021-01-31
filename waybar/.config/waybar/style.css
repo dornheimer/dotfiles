@@ -2,20 +2,20 @@
     border:        none;
     border-radius: 0;
     font-family:   "Source Sans Pro";
-    font-size:     17px;
+    font-size:     16px;
     box-shadow:    none;
     text-shadow:   none;
     transition-duration: 0s;
 }
 
 window#waybar {
-    color: rgba(53, 185, 171, 1);
+    color: #2aa198;
     background-color: #002b36;
     border-bottom: 2px solid #839496;
 }
 
-window#waybar.solo {
-    color: #2aa198;
+.modules-center {
+    color: #268bd2;
 }
 
 #workspaces {
