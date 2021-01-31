@@ -1,0 +1,32 @@
+output * bg /home/iiu/Pictures/sci/jessica-rossier-conceptart-jessica-rossier-where-the-seeping-giants-are-hd.jpg fill
+
+font pango:Droid Sans Mono 15
+
+bar {
+    swaybar_command waybar
+}
+
+default_border pixel 2
+gaps inner 10
+
+# color scheme
+# https://github.com/altdesktop/i3-style/blob/master/themes/solarized
+
+set $color_green        #859900
+set $color_base1        #93a1a1
+set $color_base2        #eee8d5
+set $color_base3        #fdf6e3
+set $color_violet       #6c71c4
+set $color_base01       #586e75
+set $color_base02       #073642
+set $color_magenta      #d33682
+set $color_red          #dc322f
+
+# colors                border          background      text            indicator
+client.focused          $color_green    $color_green    $color_base3    $color_violet
+client.focused_inactive $color_base02   $color_base02   $color_base2    $color_violet
+client.unfocused        $color_base02   $color_base02   $color_base1    $color_base01
+client.urgent           $color_magenta  $color_magenta  $color_base3    $color_red
+
+
+
